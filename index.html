@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 시작 페이지, 책상 이미지/클릭 가능 요소 -->
+    <div class="desk-wrapper">
+        <img src="desk.jpg" alt="desk" class="desk">
+        <button class="hotspot" id="btn-monitor"></button>
+        <button class="hotspot" id="btn-item"></button>
+        <button class="hotspot" id="btn-device"></button>
+    </div>
+
+    <!-- 책상 소품 클릭 -->
+    <div class="modal" id="item-modal">
+        <div class="modal-content">
+            <h3>책상 용품</h3>
+            <p>거긴 아무것도 없어요!</p>
+            <button id="close-item">닫기</button>
+        </div>
+    </div>
+
+    <!-- 주변 기기 클릭 -->
+    <div class="modal" id="device-modal">
+        <div class="modal-content">
+            <h3>하드웨어 사양</h3>
+            <p>CPU: Intel Core i5-14600K</p>
+            <p>M/B: Gigabyte B760M Aorus Elite Gen5</p>
+            <p>RAM: Patriot Viper Elite 5 32GB</p>
+            <p>GPU: Inno3D Geforce RTX 5060 Ti 8GB</p>
+            <p>SSD: SK hynix Platinum P41 2GB</p>
+            <p>Cooler: Deepcool AK620 Digital Pro</p>
+            <p>Keyboard: Roccat Vulcan TKL Pro</p>
+            <p>Mouse: VGN Dragonfly F2 Master</p>
+            <p>Headset: Razer Blackshark V2 X</p>
+            <p>Monitor: TCL 25G64</p>
+            <button id="close-device">닫기</button>
+        </div>
+    </div>
+
+    <!-- 모니터 줌인 완료 후 나타날 바탕화면 -->
+    <div id="desktop-os" class="desktop-os">
+        <div class="desktop-screen">
+            <button class="os-hotspot" id="icon-trash" data-type="trash">휴지통</button>
+            <button class="os-hotspot" id="icon-work" data-type="work">작업</button>
+            <button class="os-hotspot" id="icon-game" data-type="game">게임</button>
+            <button class="os-hotspot" id="icon-folder" data-type="folder">폴더</button>
+            <button class="os-hotspot" id="icon-txt" data-type="text">문서</button>
+        </div>
+        <button id="btn-back" class="btn-back">← 책상으로 돌아가기</button>
+    </div>
+
+    <!-- 바탕화면 아이콘 클릭 시 나타날 창 -->
+    <div id="os-window" class="os-window">
+        <div class="window-header">
+            <span id="window-title"></span>
+            <button id="window-close" class="window-close">✕</button>
+        </div>
+        <div id="window-body" class="window-body"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
