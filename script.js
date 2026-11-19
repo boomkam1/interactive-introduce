@@ -150,7 +150,9 @@ const osContents = {
     folder: {
         title: '📁 새 폴더',
         html: `
-        <p>이 폴더는 비어있습니다.</p>
+        <img src="dustinbrett.jpg" width="640" height="360" alt="ref" class="ref-img">
+        <br>
+        <a href="https://dustinbrett.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">레퍼런스 사이트: dustinbrett.com</a>
         `
     },
     text: {
